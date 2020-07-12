@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Selected the action!">
+    <menu>
+     <group >
+         <item android:title="Update"
+             android:id="@+id/update"/>
+     </group>
+        <group >
+            <item android:title="Delete"
+                android:id="@+id/delete"/>
+        </group>
+    </menu>
+
+
+</item>
+</menu>

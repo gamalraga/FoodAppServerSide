@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/image_besat_deal"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ovelay_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular categories"
+        android:id="@+id/tex_best_deal"
+        android:fontFamily="@font/brandon_medium"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        />
+
+
+</FrameLayout>

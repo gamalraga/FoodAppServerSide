@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:id="@+id/image_food"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/changephoto"
+        android:text="Change photo of food"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Food name"
+        android:id="@+id/food_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Food Price"
+        android:id="@+id/food_price"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Food Description"
+        android:id="@+id/food_description"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Food Discount"
+        android:id="@+id/food_discount"
+        />
+
+</LinearLayout>

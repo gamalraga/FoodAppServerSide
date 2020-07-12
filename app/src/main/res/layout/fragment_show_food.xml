@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.show_foodFragment">
+<!--    <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--        app:mt_hint="Enter your Food ...."-->
+<!--        app:mt_maxSuggestionsCount="10"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        app:mt_speechMode="false"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/searchBar" />-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="?android:attr/windowBackground"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Search..."
+                    android:id="@+id/search_food"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add_food"
+                    android:id="@+id/add_food"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:id="@+id/recycle_food_list"
+    android:layout_below="@id/bar"
+    />
+
+</RelativeLayout>

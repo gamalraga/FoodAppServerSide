@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:layoutDirection="ltr"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:weightSum="10"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_profile"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:src="@drawable/person"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_comment_name"
+            android:textColor="#646464"
+            android:fontFamily="@font/brandon_medium"
+            android:text="Username"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comment"
+            android:id="@+id/text_comment_text"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/brandon_medium"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center_vertical|center_horizontal"
+            style="?attr/ratingBarStyleSmall"
+            android:id="@+id/ratingbar"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

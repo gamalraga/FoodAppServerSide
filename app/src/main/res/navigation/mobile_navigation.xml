@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="gamal.myappnew.serverforclientapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="gamal.myappnew.serverforclientapp.ui.Category.CategoryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_foodlist"
+        android:name="gamal.myappnew.serverforclientapp.ui.ListFood.ListFoodFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_listfood" />
+    <fragment
+        android:id="@+id/nav_creatShipper"
+        android:name="gamal.myappnew.serverforclientapp.ui.CreateShiper.CreateShiperFragment"
+        android:label="Create Shipper"
+        tools:layout="@layout/fragment_create_shiper" />
+
+    <fragment
+        android:id="@+id/nav_addcategory"
+        android:name="gamal.myappnew.serverforclientapp.ui.addCategory.AddCategory"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_add_category" />
+
+    <fragment
+        android:id="@+id/nav_myAccount"
+        android:name="gamal.myappnew.serverforclientapp.ui.MyAcount.MyAccountFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_myaccount" />
+
+    <fragment
+        android:id="@+id/nav_requests"
+        android:name="gamal.myappnew.serverforclientapp.ui.Requests.RequestsFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/nav_showfood"
+        android:name="gamal.myappnew.serverforclientapp.Fragment.show_foodFragment"
+        android:label="Wishlist"
+        tools:layout="@layout/fragment_show_food" />
+    <fragment
+        android:id="@+id/update_category"
+        android:name="gamal.myappnew.serverforclientapp.Fragment.update_category"
+        android:label="Update category"
+        tools:layout="@layout/update_category" />
+
+</navigation>

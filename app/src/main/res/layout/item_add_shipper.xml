@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    android:layoutDirection="ltr"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_shhiper_name"
+        android:inputType="text"
+        android:hint="Shipper Name"
+        android:fontFamily="@font/brandon_medium"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shipper Phone"
+        android:inputType="phone"
+        android:id="@+id/ed_shhiper_phone"
+        android:fontFamily="@font/brandon_medium"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        /><EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ed_shhiper_password"
+    android:fontFamily="@font/brandon_medium"
+    android:textSize="20sp"
+    android:inputType="textPassword"
+    android:textColor="@android:color/black"
+    android:hint="Shipper Password"
+    />
+
+
+</LinearLayout>

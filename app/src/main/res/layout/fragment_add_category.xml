@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="?android:attr/windowBackground"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/close"
+                    android:src="@drawable/close"
+                    android:layout_marginLeft="-21dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/post"
+                    android:id="@+id/post"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/bar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_menu"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_below="@id/image_menu"
+        android:id="@+id/selcted_image"
+        android:text="Selected image"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_name"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_below="@id/selcted_image"
+        android:hint="Enter Menu name"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@id/nav_home">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        </group>
+        <group android:id="@+id/nav_category"
+            tools:ignore="DuplicateIds">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/category"
+            android:title="Category" />
+        </group>
+        <group android:id="@+id/nav_foodlist"
+            tools:ignore="DuplicateIds">
+        <item
+            android:id="@+id/nav_foodlist"
+            android:icon="@drawable/food"
+            android:title="all Food" />
+        </group>
+        <group android:id="@+id/nav_requests"
+            tools:ignore="DuplicateIds">
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/order"
+            android:title="Requests" />
+        </group>
+        <group android:id="@+id/nav_addcategory"
+            tools:ignore="DuplicateIds">
+        <item
+            android:id="@+id/nav_addcategory"
+            android:icon="@drawable/add_category"
+            android:title="Add Category" />
+        </group>
+        <group android:id="@+id/nav_myAccount">
+        <item
+            android:id="@+id/nav_myAccount"
+            android:icon="@drawable/person"
+            android:title="MyAcount"
+            tools:ignore="DuplicateIds" />
+        </group>
+
+    <group android:id="@+id/nav_creatShipper"
+        tools:ignore="DuplicateIds">
+        <item
+            android:id="@+id/nav_creatShipper"
+            android:icon="@drawable/nav_shipper"
+            android:title="Create Shipper" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
